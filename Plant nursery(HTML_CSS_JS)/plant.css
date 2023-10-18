@@ -1,0 +1,50 @@
+
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+
+  .column {
+    float: left;
+    width: 30%;
+    padding:  20px;
+  }
+  
+  .row {margin: 0 -5px;}
+  
+
+  .row:after {
+    content: ""; 
+    display:table;
+    clear: both;
+  }
+  
+
+  .card {
+    box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.2);
+    padding: 22px;
+    text-align: center;
+    background-color: #f1f1f1;
+  
+  }
+
+  @media screen and (max-width: 50px) {
+    .column {
+      width: 30%;
+      display: block;
+      margin-bottom:10px;
+    }
+  }
+  .column:hover{
+    background: #22512498;
+  
+    border-radius: 5px;
+    box-shadow: 0 0 5px #416b41,0 0 25px #1e5624,0 0 50px #103a10,0 0 100px #1d4319; 
+}  
+.bit:hover{
+  background: #031712;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #141617,0 0 25px #212525,0 0 50px #0a0d0e,0 0 100px #091414; 
+}

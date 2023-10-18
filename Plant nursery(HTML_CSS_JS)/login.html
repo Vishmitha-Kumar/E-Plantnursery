@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="phile.css">
+    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+<div class="transbox">
+<div class="loginbox">
+<img src='https://thedispatch.blob.core.windows.net/thedispatchimages/2022/04/1913623.jpeg' class="admin">
+<h1>Login Here</h1>
+
+<form name="myform"method="post"action="abc.jsp"onsubmit="return validateform()">
+<p>Username</p>
+<input type="text" name="name" placeholder="Enter Your Email or Username" required>
+
+<p>Password</p>
+<input type="password" name="password" placeholder="Enter Your Password" required>
+
+<div id="clo">
+ <input type="submit" value="LOGIN"  class="btn btn-primary btn-lg">
+</div>
+<break>
+<break>
+
+<p><a href="C:\Users\vishm\OneDrive\Desktop\java  tube\forget.html">Lost your password? </a><br><p>
+
+
+
+</form>
+</div>
+
+
+
+</div>
+<script>
+    function validateform(){
+        var name=document.myform.name.value;
+        var password=document.myform.password.value;
+        if(name==null||name==" ")
+        {
+            alert("Name can't be blank");
+            return false;
+        }
+        else if(password.length<6)
+        {
+            alert("Password must be at least 6 characters long.");
+            return false;
+        }
+        else{
+            window.open("home.html")
+            return true;
+        }
+    }
+</script>
+
+</body>
+</html>
+<html>
+
